@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - VSK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee6f3f5281.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Removal-952.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi,My name is<br><span id="element1"></span></h1>
+            <h2>and I am a Aspairing<br><span id="element2"></span><br>from NXT WAVE ccbp 4.0.</h2>
+        </div>
+    </div>
+</div>
+
+<!-- -------------about---------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="img" src="images/InShot_20230731_165253744.jpg" alt="Profile-pic">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Passionate about Software Industry with a
+                degree in Computer Science and Maths. Seeking 
+                opportunities where I can Learn new Skills to 
+                Achieve Solutions For The Challenges And To Do 
+                Self-Developmnt By Self-Learning, Analyzing and 
+                Decision Making.Qualified Software Trainee seeking 
+                a position in which to put my education, skills and 
+                experience to work with a well-established organization.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML 5</span></li>
+                        <li>CSS</li>
+                        <li><span>JAVA SCRIPT</span></li>
+                        <li>PYTHON</li>
+                        <li><span>SQL</span></li>                        
+                        <li>AWS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>TRAINEE(Internship)</span><br>Bostonlogix (India) Private Limited,HYD<br><span>Role:</span>Backend Service<br><span>Technologies:</span> SQL(Oracle), Excel, AWS<br><span>Job Description:</span> Exracting data from database servers, Cleaning insights from data & submit file in AWS servers.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-Current</span><br>Pursuing <span>FULL-STACK Development</span>Course<br>NXT WAVE CCBP 4.O</li>
+                        <li><span>2018-2021</span><br>BSC-(Computer Science)<br>Telanagna Tribal Welfare Degree College, Karimnagar</li>
+                        <li><span>2016-2018</span><br>MPC-INTER<br>Padhma Sri Junior College,Sircilla</li>
+                        <li><span>2015-2016</span><br>SSC<br>Z.P High School,Sircilla</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------services--------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipusam dolor sit amet, consenctetur adipiscing elit. Sed nulla nibka,
+                    tincidunt sit amet sapien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UX/UI Design</h2>
+                <p>Lorem ipusam dolor sit amet, consenctetur adipiscing elit. Sed nulla nibka,
+                    tincidunt sit amet sapien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipusam dolor sit amet, consenctetur adipiscing elit. Sed nulla nibka,
+                    tincidunt sit amet sapien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------Projrcts------------------ -->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/turisom.png">
+                <div class="layer">
+                    <h3>Static Websites</h3>
+                    <p>Developed tourism website where users can browse through the content, videos and images of popular destinations.
+                        <br><span>Technologies used: </span>HTML, CSS, Bootstrap</p>
+                    <a href="https://vskturisom.ccbp.tech"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/food munch.png">
+                <div class="layer">
+                    <h3>Responsive Websites</h3>
+                    <p>Developed a responsive website for Food Store where users can see a list of food items, detailed information about a food item, offers.
+                        <br><span>Technologies used: </span>HTML, CSS, JS, REST API Calls, Bootstrap</p>
+                    <a href="https://vskfoodmunch.ccbp.tech"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/todos.png">
+                <div class="layer">
+                    <h3>Dynamic Web Applications</h3>
+                    <p>Developed persistent todo application with CRUD operations to track list of tasks
+                        <br><span>Technologies used: </span>HTML, CSS, JS, REST API Calls, Bootstrap</p>
+                    <a href="https://vsktodos.ccbp.tech"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more >></a>
+    </div>
+</div>
+
+<!-- ----------------Contact---------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> saikrishnavaddepallivsk@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9052780305</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/VSK.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Full Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i>opyright @ VSK Made with <i class="fa-solid fa-heart"></i> by Youtube Tutorials</p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element1 ', {
+      strings: ['Saikrishna Vaddepalli'],
+      typeSpeed: 100,
+    });
+
+    var typed = new Typed('#element2 ', {
+      strings: ['PYTHON FULL-STACK Developer'],
+      typeSpeed: 100,
+    });
+  </script>
+
+<script>
+// for about tab
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // for side menu
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<!-- -----------contact form script of google sheet--------------- -->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTpjuRQUm2qvOdxJJ_HZ2br5Lx-54I9LkQPe6yCP8TkaYdaP4TycDJ50sd5lZH53d-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const mag = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
